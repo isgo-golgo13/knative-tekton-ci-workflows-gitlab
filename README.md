@@ -1,4 +1,4 @@
-# knative-tekton-ci-workflows-gitlab
+# Knative Tekton CI with GitLab and Hashicorp Vault Operator Workflows
 GitLab Triggered Knative Tekton In-K8s Cluster CI Pipeline for Go App (Containerize, Aquasec Trivy NIST 800-53 CVE Scan).
 
 The following Kubernetes services are part of this architectural workflow.
