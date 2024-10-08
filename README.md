@@ -15,6 +15,16 @@ cloud-agnostic Kubernetes-Native (In-Cluster) `Secrets` store. The secret creden
 - Kubernetes Cluster
 - Helm
 
+
 ## Installation w/ out ArgoCD or FluxCD
 
 The follow workflow is required to configure Tekton and Tetkon Pipeline with GitLab.
+
+- Install (Provision) Kubernetes Cluster
+- Install (Provision) Tekton Operator to Kubernetes Cluster
+- Install (Provision) Hashicorp Vault Kubernetes Operator to the Kubernetes Cluster
+- Configure Hashicorp Vault Kubernetes Operator Auto-Unsealing Workflow (Kubernetes Job)
+- Install Kubernetes External Secrets Operator (ESO) and Register ESO w/ Hashicorp Vault
+- Configure Kubernetes External Secrets Operator to Pull DockerHub Credentials
+- Provision Tekton RBAC Configuration for Kubernetes Cluster and Tekton Namespace
+- Provision GitLab WebHook to Trigger Tetkton CI Pipeline w/ Tekton Triggers
